@@ -1,6 +1,6 @@
 from connection import get_cursor, conn
 
-def create_employee(first_name, last_name, email, position, salary):
+def create_usuari(first_name, last_name, email, position, salary):
     cursor = get_cursor()
     cursor.execute('''
         INSERT INTO usuaris (nom, cognom, email, posicio, salari)

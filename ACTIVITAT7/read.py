@@ -1,9 +1,9 @@
 from connection import get_cursor
 
-def read_employees():
+def read_usuaris():
     cursor = get_cursor()
     cursor.execute('SELECT * FROM usuaris')
-    employees = cursor.fetchall()
-    for employee in employees:
-        print(employee)
+    usuaris = cursor.fetchall()
+    for usuari in usuaris:
+        print(usuari)
     cursor.close()

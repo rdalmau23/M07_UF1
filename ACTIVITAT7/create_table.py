@@ -4,14 +4,14 @@ def create_table():
     cursor = get_cursor()
 
     
-    cursor.execute('''DROP TABLE IF EXISTS employees''')
+    cursor.execute('''DROP TABLE IF EXISTS usuaris''')
 
    
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS usuaris (
             id SERIAL PRIMARY KEY,
             nom VARCHAR(50),
-            vognom VARCHAR(50),
+            cognom VARCHAR(50),
             email VARCHAR(100),
             posicio VARCHAR(50),
             salari NUMERIC
