@@ -8,4 +8,4 @@ def update_usuari(usuari_id, nova_posicio=None, nou_salari=None):
         cursor.execute('UPDATE usuaris SET salari = %s WHERE id = %s', (nou_salari, usuari_id))
     conn.commit()
     cursor.close()
-    print("Registro actualizado exitosamente.")
+    print("Usuari actualitzat correctament")

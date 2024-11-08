@@ -8,4 +8,4 @@ def create_usuari(first_name, last_name, email, position, salary):
     ''', (first_name, last_name, email, position, salary))
     conn.commit()
     cursor.close()
-    print("Registro creado exitosamente.")
+    print("Usuari creat correctament!")
