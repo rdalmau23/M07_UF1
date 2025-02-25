@@ -7,8 +7,8 @@ app = FastAPI()
 
 class Item(BaseModel):
     name: str
-    price: float = Field(gt=0, description="The price must be greater than zero")
-    description: str | None = Field(default=None, max_length=300, title="The description of the item")
+    price: float = Field(gt=0, description="El preu ha de ser més de 0")
+    description: str | None = Field(default=None, max_length=300, title="Descripció del item")
     tax: float | None = None
 
 
