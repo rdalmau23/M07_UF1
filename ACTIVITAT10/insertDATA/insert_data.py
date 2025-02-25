@@ -12,7 +12,7 @@ def insert_data():
             word = Word(word=row["word"], theme=row["theme"])
             session.add(word)
         session.commit()
-        print(f"Se han insertado {len(df)} palabras en la base de datos.")
+        print(f"S'han insertat {len(df)} paraules.")
 
 if __name__ == "__main__":
     insert_data()
