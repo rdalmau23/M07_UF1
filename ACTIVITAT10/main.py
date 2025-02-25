@@ -7,7 +7,7 @@ import random
 
 app = FastAPI()
 
-# Ruta raíz
+# Arrel del projecte
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Penjat API!"}
