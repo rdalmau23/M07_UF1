@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc Penjat</title>
+</head>
+<body id="cos">
+    <h1>Joc del Penjat</h1>
+    <input type="password" id="motJugador" placeholder="Escriu una paraula"></input>
+    <input type="checkbox" onclick="canviarTipus()">Mostrar</button>
+    <button id="iniciarJoc" onclick="comencaJoc()">Iniciar joc</button>
+    <h1 id="motSecret">Inicia la partida</h1>
+    <div id="tecles">
+        <button onclick="verificaLletra(this)">A</button>
+        <button onclick="verificaLletra(this)">B</button>
+        <button onclick="verificaLletra(this)">C</button>
+        <button onclick="verificaLletra(this)">D</button>
+        <button onclick="verificaLletra(this)">E</button>
+        <button onclick="verificaLletra(this)">F</button>
+        <button onclick="verificaLletra(this)">G</button>
+        <button onclick="verificaLletra(this)">H</button>
+        <button onclick="verificaLletra(this)">I</button>
+        <button onclick="verificaLletra(this)">J</button>
+        <button onclick="verificaLletra(this)">K</button>
+        <button onclick="verificaLletra(this)">L</button>
+        <button onclick="verificaLletra(this)">M</button>
+        <button onclick="verificaLletra(this)">N</button>
+        <button onclick="verificaLletra(this)">NY</button>
+        <button onclick="verificaLletra(this)">O</button>
+        <button onclick="verificaLletra(this)">P</button>
+        <button onclick="verificaLletra(this)">Q</button>
+        <button onclick="verificaLletra(this)">R</button>
+        <button onclick="verificaLletra(this)">S</button>
+        <button onclick="verificaLletra(this)">T</button>
+        <button onclick="verificaLletra(this)">U</button>
+        <button onclick="verificaLletra(this)">V</button>
+        <button onclick="verificaLletra(this)">W</button>
+        <button onclick="verificaLletra(this)">Y</button>
+        <button onclick="verificaLletra(this)">X</button>
+        <button onclick="verificaLletra(this)">Z</button>
+    </div>
+    <div id="estadistiques">
+        <p><strong>Punts: </strong><span id="punts">0</span></p>
+        <p><strong>Partides Jugades: </strong><span id="totalPartides">0</span></p>
+        <p><strong>Partides Guanyades: </strong><span id="partidesGuanyades">0</span></p>
+        <p><strong>Percentatge de Victòries: </strong><span id="percentatgeVictoria">0%</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
